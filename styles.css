@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 896px;
+  height: 504px;
+}
+
+input {
+  width: -webkit-fill-available;
+  margin: 4px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  color: #c9c9c9;
+  background-color: #21201e;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#webview {
+  width: -webkit-fill-available;
+  height: calc(100% - 33px);
+}
