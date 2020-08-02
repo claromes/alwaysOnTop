@@ -15,7 +15,7 @@ function createWindow () {
     fullscreen: true,
     frame: false,
     backgroundColor: '#2f3241',
-    icon: './nountop.png',
+    icon: 'nountop.ico',
     webPreferences: {
       nodeIntegration: true,
       webviewTag: true
@@ -23,7 +23,6 @@ function createWindow () {
   })
 
   win.loadFile('index.html')
-  win.openDevTools()
 }
 
 app.whenReady().then(createWindow)

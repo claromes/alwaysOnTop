@@ -1,15 +1,38 @@
 {
-  "name": "alwaysOnTop",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "name": "alwaysontop",
+  "version": "0.1.0",
+  "description": "A browser window always on top to help productivity.",
+  "homepage": "https://gitlab.com/claromes/alwaysontop",
+  "main": "app/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "keywords": [],
-  "author": "",
+  "repository": "https://gitlab.com/claromes/alwaysontop",
+  "keywords": [
+    "browser",
+    "productivity"
+  ],
+  "author": "Claromes <claromes@protonmail.ch>",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^9.1.2"
+    "electron": "^9.1.2",
+    "electron-builder": "^22.8.0"
+  },
+  "build": {
+    "appId": "com.clarome.alwaysontop",
+    "productName": "alwaysOnTop",
+    "linux": {
+      "target": [
+        "deb"
+      ],
+      "executableName": "alwaysontop",
+      "icon": "app/nountop.png",
+      "synopsis": "A browser window always on top to help productivity.",
+      "description": "A browser window always on top to help productivity.",
+      "category": "Utility",
+      "desktop": "app/alwaysontop.desktop"
+    }
   }
 }

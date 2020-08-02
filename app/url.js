@@ -9,7 +9,7 @@ onload = () => {
   document.querySelector('button').onclick = function(el) {
     el.preventDefault()
     document.getElementById('url').value = 'https://'
-    getUrl(`file://${__dirname}/favs.html`)
+    getUrl(`file://${__dirname}/home.html`)
   }
 
   webview.addEventListener('did-fail-load', failLoad)
