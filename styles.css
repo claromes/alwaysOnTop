@@ -8,7 +8,24 @@ body {
   height: 504px;
 }
 
-input {
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  margin: 2px 0 0 4px;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+form {
+  width: -webkit-fill-available;
+}
+
+input[type="url"] {
   width: -webkit-fill-available;
   margin: 4px;
   padding: 5px;
@@ -20,20 +37,15 @@ input {
   background-color: #171821;
 }
 
-div {
-  display: flex;
-  flex-direction: row;
-}
-
 .hide {
   display: none;
 }
 
 .show {
-  display: block;
+  display: flex;
 }
 
 #webview {
   width: -webkit-fill-available;
-  height: calc(100% - 33px);
+  height: calc(100% - 35px);
 }

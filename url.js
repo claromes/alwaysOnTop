@@ -6,16 +6,22 @@ onload = () => {
     getUrl(document.getElementById('url').value)
   }
 
+  document.querySelector('button').onclick = function(el) {
+    el.preventDefault()
+    document.getElementById('url').value = 'https://'
+    getUrl(`file://${__dirname}/favs.html`)
+  }
+
   webview.addEventListener('did-fail-load', failLoad)
   webview.addEventListener('did-finish-load', finishLoad)
 }
 
-const getUrl = (url) => document.querySelector('webview').src = url
+const getUrl = (url) => webview.src = url
 
 function failLoad() {
   console.log('Fail')
 }
 
 function finishLoad() {
-  document.getElementById('url').value = webview.getURL()
+  url = webview.getURL()
 }

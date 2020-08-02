@@ -23,6 +23,7 @@ function createWindow () {
   })
 
   win.loadFile('index.html')
+  win.openDevTools()
 }
 
 app.whenReady().then(createWindow)

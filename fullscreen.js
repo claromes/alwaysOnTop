@@ -7,7 +7,7 @@ let hideHeader = () => {
 let showHeader = () => {
   document.querySelector('div').classList.add('show')
   document.querySelector('div').classList.remove('hide')
-  document.querySelector('webview').style.height = 'calc(100% - 33px)'
+  document.querySelector('webview').style.height = 'calc(100% - 35px)'
 }
 
 webview.addEventListener('enter-html-full-screen', hideHeader)

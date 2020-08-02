@@ -7,12 +7,14 @@
     <title>alwaysOnTop</title>
   </head>
   <body>
-    <form>
-      <div>
-        <input id="url" type="text" placeholder="Type a url and hit Enter" value="https://"/>
-        <input type="submit" value="Enter" hidden/>
-      </div>
-    </form>
+    <div>
+      <button type="submit"><img src="./nountop.png" alt="Home" width="30" height="30" /></button>
+      
+      <form>
+        <input id="url" type="url" placeholder="Type a url and hit Enter" value="https://" />
+        <input type="submit" value="Enter" hidden />
+      </form>
+    </div>
     <webview id="webview"></webview>
     
     <script src="./url.js"></script>
