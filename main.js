@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Tray } = require('electron')
 
 let win
 
@@ -14,7 +14,8 @@ function createWindow () {
     resizable: false,
     fullscreen: true,
     frame: false,
-    backgroundColor: '#2e2c29',
+    backgroundColor: '#2f3241',
+    icon: './nountop.png',
     webPreferences: {
       nodeIntegration: true,
       webviewTag: true
