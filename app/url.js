@@ -1,13 +1,13 @@
 let webview = document.querySelector('webview')
 
 onload = () => {
-  document.querySelector('form').onsubmit = function(el) {
-    el.preventDefault()
+  document.querySelector('form').onsubmit = function(e) {
+    e.preventDefault()
     getUrl(document.getElementById('url').value)
   }
 
-  document.querySelector('button').onclick = function(el) {
-    el.preventDefault()
+  document.querySelector('button').onclick = function(e) {
+    e.preventDefault()
     document.getElementById('url').value = 'https://'
     getUrl(`file://${__dirname}/home.html`)
   }

@@ -15,7 +15,7 @@ function createWindow () {
     fullscreen: true,
     frame: false,
     backgroundColor: '#2f3241',
-    icon: 'nountop.ico',
+    icon: 'nountop.png',
     webPreferences: {
       nodeIntegration: true,
       webviewTag: true
