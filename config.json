@@ -1,0 +1,9 @@
+{
+  "dest": "dist/installers/",
+  "productName": "alwaysOnTop",
+  "description": "A browser window always on top to help productivity",
+  "icon": "nountop.png",
+  "categories": [
+    "Utility"
+  ]
+}

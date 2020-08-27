@@ -3,35 +3,16 @@
   "version": "0.1.0",
   "description": "A browser window always on top to help productivity",
   "homepage": "https://gitlab.com/claromes/alwaysontop",
-  "main": "app/main.js",
+  "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "start": "electron main.js",
+    "linux64": "electron-packager . alwaysontop --platform=linux --arch=x64",
+    "deb64": "electron-installer-debian --src alwaysontop-linux-x64/ --dest dist/installers/ --arch amd64 --config config.json"
   },
-  "repository": "https://gitlab.com/claromes/alwaysontop",
-  "keywords": [
-    "browser",
-    "productivity"
-  ],
   "author": "Claromes <claromes@protonmail.ch>",
-  "license": "ISC",
   "devDependencies": {
     "electron": "^9.1.2",
-    "electron-builder": "^22.8.0"
-  },
-  "build": {
-    "appId": "com.clarome.alwaysontop",
-    "productName": "alwaysOnTop",
-    "linux": {
-      "target": [
-        "deb"
-      ],
-      "executableName": "alwaysontop",
-      "icon": "app/nountop.png",
-      "synopsis": "A browser window always on top to help productivity",
-      "description": "A browser window always on top to help productivity",
-      "category": "Utility"
-    }
+    "electron-installer-debian": "^3.1.0",
+    "electron-packager": "^15.1.0"
   }
 }

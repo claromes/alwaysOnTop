@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Encoding=UTF-8
-Name=alwaysOnTop
-Comment=A browser window always on top to help productivity
-Exec=application
-Icon=nountop.png
-Terminal=false

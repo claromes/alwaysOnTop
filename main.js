@@ -1,9 +1,7 @@
-const { app, BrowserWindow, Tray } = require('electron')
-
-let win
+const { app, BrowserWindow, nativeImage } = require('electron')
 
 function createWindow () {
-  win = new BrowserWindow({
+  const win = new BrowserWindow({
     width: 896,
     height: 504,
     x: 1024,
@@ -15,7 +13,7 @@ function createWindow () {
     fullscreen: true,
     frame: false,
     backgroundColor: '#2f3241',
-    icon: 'nountop.png',
+    icon: nativeImage.createFromPath('./nountop.png'),
     webPreferences: {
       nodeIntegration: true,
       webviewTag: true
