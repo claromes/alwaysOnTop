@@ -1,12 +1,5 @@
 image: node
 
-stages:
-  - build
-
-cache:
-  paths:
-    - ./dist/
-
 build:
   stage: build
 
