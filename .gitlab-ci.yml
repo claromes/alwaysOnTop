@@ -13,7 +13,5 @@ build:
   script:
     - apt update
     - apt install snapd -y
-    - snap install hello-world
-    - hello-world
     - yarn install
     - yarn build:package && yarn build:snap
