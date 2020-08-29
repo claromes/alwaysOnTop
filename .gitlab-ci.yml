@@ -4,14 +4,12 @@ build:
   stage: build
 
   artifacts:
-    name: "alwaysontop_0.1.0_amd64.deb"
+    name: "alwaysontop_0.1.0"
     when: always
     expire_in: never
     paths:
-      - ./dist/installers/
+      - ./alwaysontop-linux-x64/alwaysontop
 
   script:
     - yarn install
-    - sudo apt-get install fakeroot
     - yarn linux64
-    - yarn deb64
