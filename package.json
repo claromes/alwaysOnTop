@@ -1,9 +1,10 @@
 {
   "name": "alwaysontop",
   "version": "0.1.0",
-  "description": "A browser window always on top to help productivity",
+  "description": "Browser window always on top to help productivity in a single-monitor study station",
   "homepage": "https://gitlab.com/claromes/alwaysontop",
   "main": "main.js",
+  "license": "MIT",
   "scripts": {
     "start": "electron main.js",
     "linux64": "electron-packager . alwaysontop --platform=linux --arch=x64",

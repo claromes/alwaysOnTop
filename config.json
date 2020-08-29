@@ -1,7 +1,7 @@
 {
   "dest": "dist/installers/",
   "productName": "alwaysOnTop",
-  "description": "A browser window always on top to help productivity",
+  "description": "Browser window always on top to help productivity in a single-monitor study station",
   "icon": "nountop.png",
   "categories": [
     "Utility"

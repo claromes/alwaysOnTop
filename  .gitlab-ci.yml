@@ -1,0 +1,23 @@
+image: node
+
+stages:
+  - build
+
+cache:
+  paths:
+    - ./dist/
+
+build:
+  stage: build
+
+  artifacts:
+    name: "alwaysontop_0.1.0_amd64.deb"
+    when: always
+    expire_in: never
+    paths:
+      - ./dist/installers/
+
+  script:
+    - yarn install
+    - yarn linux64
+    - yarn deb64
