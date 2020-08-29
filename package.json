@@ -8,15 +8,12 @@
   "scripts": {
     "start": "electron main.js",
     "linux64": "electron-packager . alwaysontop --platform=linux --arch=x64",
-    "deb64": "electron-installer-debian --src alwaysontop-linux-x64/ --dest dist/installers/ --arch amd64 --config config.json",
-    "build:package": "electron-packager ./ --out=out",
-    "build:snap": "electron-installer-snap --src=out/alwaysontop-linux-x64"
+    "deb64": "electron-installer-debian --src alwaysontop-linux-x64/ --dest dist/installers/ --arch amd64 --config config.json"
   },
   "author": "Claromes <claromes@protonmail.ch>",
   "devDependencies": {
     "electron": "^9.1.2",
     "electron-installer-debian": "^3.1.0",
-    "electron-installer-snap": "^5.1.0",
     "electron-packager": "^15.1.0"
   }
 }
