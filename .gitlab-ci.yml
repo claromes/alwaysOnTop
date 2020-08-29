@@ -13,3 +13,5 @@ build:
   script:
     - yarn install
     - yarn linux64
+    - DEB_BUILD_OPTIONS="parallel=4" fakeroot debian/rules binary
+    - yarn deb64
