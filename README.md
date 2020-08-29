@@ -1,7 +1,3 @@
-<p align="center">
-  <img alt="alwaysOnTop" src="nountop.png">
-</p>
-
 <p>
   <img alt="Version 0.1.0" src="https://img.shields.io/badge/version-0.1.0-148ecb">
 </p>
