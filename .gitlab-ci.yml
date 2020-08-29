@@ -12,6 +12,6 @@ build:
 
   script:
     - yarn install
-    - apt-get install fakeroot
+    - sudo apt-get install fakeroot
     - yarn linux64
     - yarn deb64
