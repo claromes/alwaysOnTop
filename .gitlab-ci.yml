@@ -4,14 +4,16 @@ build:
   stage: build
 
   artifacts:
-    name: "alwaysontop_0.1.0"
+    name: "alwaysontop.snap"
     when: always
     expire_in: never
     paths:
-      - ./alwaysontop-linux-x64/alwaysontop
+      - ./out/alwaysontop-linux-x64
 
   script:
+    - sudo apt update
+    - sudo apt install snapd
+    - sudo snap install hello-world
+    - hello-world
     - yarn install
-    - yarn linux64
-    - DEB_BUILD_OPTIONS="parallel=4" fakeroot debian/rules binary
-    - yarn deb64
+    - yarn build:package && yarn build:snap
