@@ -11,7 +11,7 @@ build:
       - ./dist/installers/
 
   script:
-    - npm install
-    - npm install -g electron-installer-debian
-    - npm run linux64
-    - npm run deb64
+    - yarn install
+    - apt-get install fakeroot
+    - yarn linux64
+    - yarn deb64
