@@ -8,10 +8,11 @@ build:
     when: always
     expire_in: never
     paths:
-      - ./out
+      - ./
 
   script:
-    - apt update
-    - apt install snapd -y
+    - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    - brew install fakeroot dpkg
     - yarn install
-    - yarn build:package && yarn build:snap
+    - yarn linux64
+    - yarn deb64
