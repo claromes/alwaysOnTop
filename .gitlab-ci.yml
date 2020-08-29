@@ -12,5 +12,6 @@ build:
 
   script:
     - npm install npm@latest -g
+    - npm install
     - npm run linux64
     - npm run deb64
