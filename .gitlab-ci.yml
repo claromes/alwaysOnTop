@@ -11,6 +11,6 @@ build:
       - ./dist/installers/
 
   script:
-    - yarn install
-    - yarn linux64
-    - yarn deb64
+    - npm install npm@latest -g
+    - npm run linux64
+    - npm run deb64
